@@ -1,7 +1,8 @@
 package com.interview.lld.currencyconverter;
 
 import java.math.BigDecimal;
+import java.util.Currency;
 
 public interface RateProvider {
-    BigDecimal getRate(String fromCurrency, String toCurrency);
+    BigDecimal fetchRate(Currency fromCurrency, Currency toCurrency);
 }
